@@ -24,7 +24,7 @@ def load(data): #Se coge el dataframe nuevo y se vuelve a CSV
     data.to_csv(csv_path, index=False)
     return csv_path
 
-def tuberia_de_datos(datos):
+def tuberia_de_datos(datos): #Se utliza tuberias para correr todas las funciones anteriores
     datos_crudos = extract(datos)
     datos_trans1 = transform_gender(datos_crudos)
     datos_trans2 = transform_weather(datos_trans1)
