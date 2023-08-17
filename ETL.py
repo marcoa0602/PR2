@@ -31,3 +31,10 @@ def load(data):
 
     data.to_csv(output_path, index = "False")
     return output_path
+
+def tuberia_de_datos(ruta_datos):
+    datos_crudos = extract(ruta_datos)
+    datos_trans = transform(datos_crudos)
+    carga = load(datos_trans)
+
+    return carga
