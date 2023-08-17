@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score
 
-def to_dataframe(data):
+def to_dataframe(data): #Cargando la base de datos
     pd.read_csv(data)
 
     return data
