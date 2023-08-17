@@ -21,9 +21,8 @@ def transform_weather(data):
 
 def load(data):
     csv_path = 'datos_transformados.csv'
-    output_path = data.to_csv(csv_path, index = "False")
-    
-    return output_path
+    data.to_csv(csv_path, index=False)
+    return csv_path
 
 def tuberia_de_datos(datos):
     datos_crudos = extract(datos)
