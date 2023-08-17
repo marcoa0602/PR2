@@ -3,13 +3,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPRegressor
 from sklearn.metrics import mean_absolute_error
 
-<<<<<<< HEAD
 def to_dataframe(data): #Cargando la base de datos
-    pd.read_csv(data)
-=======
-def to_dataframe(data):
     df = pd.read_csv(data)
->>>>>>> c5f233b9633b3f3f0f8c956a263407a06757f48b
 
     return df
 
