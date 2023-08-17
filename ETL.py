@@ -5,7 +5,7 @@ def extract(ruta_datos):
 
     return dataframe
 
-def transform_gender(dataframe):
+def transform_gender(dataframe): #Esto hace que gender se vuelva valores numericos y se ponen en diferentes columnas
     dataframe.drop(columns = ['ID', 'Dream Weight'], inplace = True)
 
     gender_dummy = pd.get_dummies(dataframe['Gender'], prefix='Gender', drop_first = True)
@@ -13,7 +13,7 @@ def transform_gender(dataframe):
 
     return data
 
-def transform_weather(data):
+def transform_weather(data): #Esto hace que weather se vuelva valores numericos y se ponen en diferentes columnas
     weather_dummy = pd.get_dummies(data['Weather Conditions'], prefix='Weather Conditions', drop_first = True)
     data = pd.concat([data, weather_dummy], axis=1).drop(columns = ['Weather Conditions'])
 
