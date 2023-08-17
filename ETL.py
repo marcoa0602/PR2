@@ -25,6 +25,7 @@ def load(data):
     csv_path = 'datos_transformados'
     output_path = os.path.join(archive_path, csv_path)
     output_path = data.to_csv(output_path, index = "False")
+    
 
     return output_path
 
