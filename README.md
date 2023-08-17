@@ -1,5 +1,6 @@
 # PR2
- Proyecto Integrador 2
+## Proyecto Integrador 2
+
 Este proyecto se centró en el análisis de ejercicios y su influencia en la quema de calorías para alcanzar el "dream weight". A través de una exhaustiva exploración de datos y la creación de visualizaciones, buscamos determinar cuáles son los ejercicios más efectivos en función de variables clave como el género, la edad, la duración del ejercicio, la intensidad, y el impacto del clima. A continuación, se resume cómo abordamos este análisis y los aspectos fundamentales de nuestra metodología, incluyendo ejemplos de los códigos utilizados.
 Comenzamos importando el conjunto de datos desde la fuente, utilizando la biblioteca pandas de Python. Luego, llevamos a cabo un proceso de exploración de datos para comprender la estructura y los atributos presentes en los datos. Identificamos las variables clave que influyen en la quema de calorías, como el ejercicio, el género, la edad, la duración, la intensidad y el clima.
 Utilizamos bibliotecas de visualización como matplotlib y seaborn para crear gráficos que ilustran cómo diferentes variables afectan la quema de calorías. Generamos gráficos de barras, diagramas de dispersión y gráficos de caja para comparar la quema de calorías en función de distintos atributos. Estos gráficos proporcionaron una representación visual de las tendencias y patrones en los datos.
