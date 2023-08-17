@@ -1,7 +1,7 @@
 import pandas as pd
 
 def extract(ruta_datos):
-    dataframe = pd.read_csv(ruta_datos)
+    dataframe = pd.read_csv(ruta_datos) #sta función toma una ruta de archivo como entrada y carga los datos desde ese archivo CSV en un DataFrame de Pandas.
 
     return dataframe
 
