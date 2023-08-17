@@ -13,7 +13,7 @@ def to_dataframe(data):
 
     return df
 
-def separacion(data):
+def separacion(data): #Separacion de datos para poder comparar las calorias quemadas con el ejercicio
     objetivo = data['Calories Burn']
     caracteristicas = data.drop(columns = ['Calories Burn', 'Exercise'])
     
