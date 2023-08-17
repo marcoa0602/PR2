@@ -10,7 +10,7 @@ def to_dataframe(data):
 
 def separacion(data):
     objetivo = data['Calories Burn']
-    caracteristicas = data.drop(columns = ['Calories Burn'])
+    caracteristicas = data.drop(columns = ['Calories Burn', 'Exercise'], inplace = True)
     
     X_train, X_test, y_train, y_test = train_test_split(caracteristicas, objetivo, test_size = .3, random_state = 0)
 
@@ -36,3 +36,5 @@ def clasificacion(data):
     X_train, X_test, y_train, y_test = separacion(dataframe)
     modelo = entrenamiento(X_train, y_train)
     eval = evaluacion(modelo, X_test, y_test)
+
+    return eval
