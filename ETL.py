@@ -19,7 +19,7 @@ def transform_weather(data): #Esto hace que weather se vuelva valores numericos 
 
     return data
 
-def load(data):
+def load(data): #Se coge el dataframe nuevo y se vuelve a CSV
     csv_path = 'datos_transformados.csv'
     data.to_csv(csv_path, index=False)
     return csv_path
