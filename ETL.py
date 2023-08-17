@@ -1,5 +1,4 @@
 import pandas as pd
-import os
 
 def extract(ruta_datos):
     dataframe = pd.read_csv(ruta_datos)
@@ -21,12 +20,9 @@ def transform_weather(data):
     return data
 
 def load(data):
-    archive_path = 'C:\PR2\PR2\Datos'
-    csv_path = 'datos_transformados'
-    output_path = os.path.join(archive_path, csv_path)
-    output_path = data.to_csv(output_path, index = "False")
+    csv_path = 'datos_transformados.csv'
+    output_path = data.to_csv(csv_path, index = "False")
     
-
     return output_path
 
 def tuberia_de_datos(datos):
