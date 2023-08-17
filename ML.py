@@ -29,7 +29,7 @@ def entrenamiento(train1, train2):
 
     return modelo
 
-def evaluacion(model, test1, test2):
+def evaluacion(model, test1, test2): #Funcion del modelo para empezar el test
     y_eval = model.predict(test1)
     score = mean_absolute_error(test2, y_eval)
 
