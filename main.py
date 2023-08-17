@@ -2,3 +2,7 @@ url = 'https://raw.githubusercontent.com/marcoa0602/PR2/main/Datos/datos_brutos.
 
 from ETL import tuberia_de_datos
 tuberia = tuberia_de_datos(url)
+
+from ML import clasificacion
+score = clasificacion(tuberia)
+score
